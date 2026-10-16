@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bean | Coffee & Cafe</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #38251c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #38251c;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #e7bd8a;
+    }
+
+    .hero {
+      min-height: 420px;
+      padding: 90px 20px;
+      background: linear-gradient(135deg, #f2dfc8, #d5b08b);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38251c;
+      color: white;
+      text-decoration: none;
+      padding: 12px 26px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #684633;
+    }
+
+    section {
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      color: #735e51;
+      margin-bottom: 30px;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .menu-card {
+      background: white;
+      padding: 28px 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 16px #38251c12;
+      border: 1px solid #eee2d5;
+    }
+
+    .menu-icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .menu-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .menu-card p {
+      color: #735e51;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 19px;
+      font-weight: bold;
+      color: #80502f;
+    }
+
+    .about {
+      background: #f0e2d2;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: 15px auto 25px;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: #38251c;
+      color: white;
+      text-align: center;
+      padding: 24px 15px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 350px;
+        padding: 65px 18px;
+      }
+
+      section {
+        padding: 45px 18px;
+      }
+
+      .menu-card {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">☕ Brew & Bean</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Your Daily Cup<br>of Happiness</h1>
+      <p>Fresh coffee, delicious treats, and cozy moments.</p>
+      <a class="btn" href="#menu">Explore Our Menu</a>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Our Favorites</h2>
+      <p class="section-description">
+        A little something to make your day better.
+      </p>
+
+      <div class="menu-container">
+        <div class="menu-card">
+          <div class="menu-icon">☕</div>
+          <h3>Cappuccino</h3>
+          <p>Rich espresso topped with creamy steamed milk.</p>
+          <div class="price">$4.00</div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🥐</div>
+          <h3>Butter Croissant</h3>
+          <p>Freshly baked, golden, flaky, and delicious.</p>
+          <div class="price">$3.00</div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-icon">🍰</div>
+          <h3>Chocolate Cake</h3>
+          <p>A rich chocolate treat for your sweet moments.</p>
+          <div class="price">$5.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">A Cozy Little Corner</h2>
+      <p>
+        At Brew & Bean, we believe great coffee brings people together.
+        Imagine the aroma of freshly brewed coffee, friendly smiles,
+        and a peaceful place to enjoy your favorite treats.
+      </p>
+      <a class="btn" href="#contact">Visit Us</a>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Come Say Hello</h2>
+      <p>📍 123 Coffee Street, Demo City</p>
+      <p>🕒 Monday – Saturday: 8 AM – 8 PM</p>
+      <p>✉ hello@example.com</p>
+      <p><small>Fictional details for a student portfolio demo.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Brew & Bean | Student Portfolio Demo</p>
+    <p>Made with care ☕</p>
+  </footer>
+
+</body>
+</html>
